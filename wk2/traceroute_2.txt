@@ -1,0 +1,72 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-01-22 03:12 UTC
+NSE: Loaded 151 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 03:12
+Completed NSE at 03:12, 0.00s elapsed
+Initiating NSE at 03:12
+Completed NSE at 03:12, 0.00s elapsed
+Initiating NSE at 03:12
+Completed NSE at 03:12, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 03:12
+Completed Parallel DNS resolution of 1 host. at 03:12, 0.00s elapsed
+Initiating SYN Stealth Scan at 03:12
+Scanning lamponubuntu2204-s-1vcpu-1gb-tor1-01 (147.182.152.15) [1000 ports]
+Discovered open port 25/tcp on 147.182.152.15
+Discovered open port 22/tcp on 147.182.152.15
+Discovered open port 80/tcp on 147.182.152.15
+Completed SYN Stealth Scan at 03:12, 0.02s elapsed (1000 total ports)
+Initiating Service scan at 03:12
+Scanning 3 services on lamponubuntu2204-s-1vcpu-1gb-tor1-01 (147.182.152.15)
+Completed Service scan at 03:12, 6.02s elapsed (3 services on 1 host)
+Initiating OS detection (try #1) against lamponubuntu2204-s-1vcpu-1gb-tor1-01 (147.182.152.15)
+NSE: Script scanning 147.182.152.15.
+Initiating NSE at 03:12
+Completed NSE at 03:12, 0.26s elapsed
+Initiating NSE at 03:12
+Completed NSE at 03:12, 0.04s elapsed
+Initiating NSE at 03:12
+Completed NSE at 03:12, 0.00s elapsed
+Nmap scan report for lamponubuntu2204-s-1vcpu-1gb-tor1-01 (147.182.152.15)
+Host is up (0.000071s latency).
+Not shown: 997 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.6 (Ubuntu Linux; protocol 2.0)
+25/tcp open  smtp    Postfix smtpd
+|_smtp-commands: packer-64fa4e0c-1b3d-0d5c-9e7a-ebd0899233a8, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8, CHUNKING,
+| ssl-cert: Subject: commonName=packer-64fa4e0c-1b3d-0d5c-9e7a-ebd0899233a8
+| Subject Alternative Name: DNS:packer-64fa4e0c-1b3d-0d5c-9e7a-ebd0899233a8
+| Issuer: commonName=packer-64fa4e0c-1b3d-0d5c-9e7a-ebd0899233a8
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-09-07T22:32:04
+| Not valid after:  2033-09-04T22:32:04
+| MD5:   1b16 957d 97e3 bdca 8fa7 e03d 0370 baef
+|_SHA-1: ba96 c1ef 2a6a 563a 0791 ad23 fea9 045b 8662 4408
+|_ssl-date: TLS randomness does not represent time
+80/tcp open  http    Apache httpd 2.4.52 ((Ubuntu))
+| http-methods:
+|_  Supported Methods: POST OPTIONS HEAD GET
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html).
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6.32
+OS details: Linux 2.6.32
+Uptime guess: 5.886 days (since Tue Jan 16 05:56:28 2024)
+Network Distance: 0 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host:  packer-64fa4e0c-1b3d-0d5c-9e7a-ebd0899233a8; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 03:12
+Completed NSE at 03:12, 0.00s elapsed
+Initiating NSE at 03:12
+Completed NSE at 03:12, 0.00s elapsed
+Initiating NSE at 03:12
+Completed NSE at 03:12, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 8.57 seconds
+           Raw packets sent: 1022 (45.778KB) | Rcvd: 2045 (87.112KB)
